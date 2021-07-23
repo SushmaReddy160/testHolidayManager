@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Holiday List" icon-name="utility:salesforce1">
+        <div class="slds-p-around_medium">
+            <div class="slds-m-around_small">
+                <strong>Current Favorite Holiday is : {preSelectedRow}</strong></br>
+                <h5>To update favorite Holiday, please select the holiday from the list.</h5>
+            </div>
+        <template if:true={holidaysList}>
+            <lightning-datatable data={holidaysList.data} columns={columns} key-field="Id"
+            onrowselection={handleRowSelection}
+            selected-rows={preSelectedRow}
+            >
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            {error}
+        </template>
+    </div>
+    <div class='slds-m-small'>
+        <lightning-button label="Select Favorite Holiday" variant="brand" onclick={holidayUpdateHandler}></lightning-button>
+    </div>
+    </lightning-card>
+</template>
