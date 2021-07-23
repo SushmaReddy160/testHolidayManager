@@ -2,7 +2,7 @@ Component List -
 
 1- Lightning Web component - HolidayList
 
-A lightning web component is exposed on UI as lightning tab and this component is displaying list of holiday in a given calender year based on year and country.
+A lightning web component is exposed on a tab (Communication) and this component is displaying list of holiday in a given calender year based on year and country.
 
 
 Functionality - 
@@ -39,3 +39,14 @@ We have in total 2 classes -
  b- MockHttpResponseGenerator
  
  both of these test classes are used to cover the test coverage of our main classes.
+ 
+ 
+ Deployment Steps-
+ 
+ 
+ 1- Convert source format to metadata format(sfdx force:source:convert)
+ 2- Deploy from scratch to sandbox(Sfdx: force:mdapi:deploy)
+ 3- Check deployment Status(sfdx force:mdapi:deploy:report)
+
+
+ 
