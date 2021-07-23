@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error</shortDescription>
+        <value>Please select a holiday first</value>
+    </labels>
+    <labels>
+        <fullName>GenericUpdateError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>GenericUpdateError</shortDescription>
+        <value>There is some issue updating record, please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>RowSelectionError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RowSelectionError</shortDescription>
+        <value>Only one row can be selected</value>
+    </labels>
+    <labels>
+        <fullName>Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Success</shortDescription>
+        <value>Holiday has been saved successfully.</value>
+    </labels>
+</CustomLabels>
